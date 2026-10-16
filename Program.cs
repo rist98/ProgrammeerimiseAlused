@@ -22,7 +22,7 @@ while (!isCorrect)
     }
     else
     {
-        Console.WriteLine("Error: Sisesta korrektne arv!");
+        Console.WriteLine("Error: Sisesta korrektne arv!"); // This line will never be reached because the input is always converted to an int. Võiks muuta selliseks, kus kui kasutaja sisestab invalid sisendi, siis annaks selle.
         userGuess = Convert.ToInt32(Console.ReadLine());
     }
     
